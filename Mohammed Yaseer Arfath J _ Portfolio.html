@@ -1,0 +1,1372 @@
+<!DOCTYPE html>
+<!-- saved from url=(0065)file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mohammed Yaseer Arfath J | Portfolio</title>
+    <link rel="stylesheet" href="./Mohammed Yaseer Arfath J _ Portfolio_files/all.min.css">
+    <link rel="stylesheet" href="./Mohammed Yaseer Arfath J _ Portfolio_files/aos.css">
+    <style>
+        /* CSS Variables */
+        :root {
+            --primary-color: #2563eb;
+            --secondary-color: #7c3aed;
+            --accent-color: #f59e0b;
+            --dark-color: #1e293b;
+            --light-color: #f8fafc;
+            --text-color: #334155;
+            --text-light: #64748b;
+            --shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        /* Base Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--light-color);
+            overflow-x: hidden;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            color: var(--dark-color);
+            margin-bottom: 15px;
+        }
+
+        .section-title p {
+            color: var(--text-light);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 2px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: var(--transition);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: var(--shadow);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 20px -3px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary-color);
+            color: var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        /* Header & Navigation */
+        header {
+            background-color: rgba(255, 255, 255, 0.95);
+            box-shadow: var(--shadow);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--dark-color);
+        }
+
+        .logo span {
+            color: var(--primary-color);
+        }
+
+        .nav-links {
+            display: flex;
+        }
+
+        .nav-links li {
+            margin-left: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 600;
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--primary-color);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            font-size: 1.5rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(30, 41, 59, 0.8), rgba(30, 41, 59, 0.9)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-btns {
+            animation: fadeIn 1.5s ease;
+        }
+
+        .hero-btns .btn {
+            margin: 0 10px;
+        }
+
+        .typing-text {
+            color: var(--accent-color);
+            font-weight: 700;
+        }
+
+        /* About Section */
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .about-img {
+            flex: 1;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+        }
+
+        .about-img img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+            transition: var(--transition);
+        }
+
+        .about-img:hover img {
+            transform: scale(1.05);
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: var(--dark-color);
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            color: var(--text-light);
+        }
+
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill {
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .skill:hover {
+            transform: translateY(-3px);
+            background-color: var(--primary-color);
+            color: white;
+        }
+
+        .cv-download {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: var(--transition);
+            background: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            box-shadow: var(--shadow);
+        }
+
+        .cv-download:hover {
+            background: var(--primary-color);
+            color: white;
+        }
+
+        .instagram-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 15px;
+            color: var(--primary-color);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .instagram-link:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Projects Section */
+        .projects {
+            background-color: #f1f5f9;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .project-img {
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .project-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-img img {
+            transform: scale(1.1);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(37, 99, 235, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .project-card:hover .project-overlay {
+            opacity: 1;
+        }
+
+        .project-info {
+            padding: 20px;
+        }
+
+        .project-info h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        .project-info p {
+            color: var(--text-light);
+            margin-bottom: 15px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .project-tag {
+            background-color: #e0f2fe;
+            color: var(--primary-color);
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        /* Certificates Section */
+        .certificates {
+            background-color: white;
+        }
+
+        .certificates-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .certificate-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: var(--shadow);
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .certificate-img {
+            height: 200px;
+            overflow: hidden;
+        }
+
+        .certificate-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .certificate-info {
+            padding: 20px;
+        }
+
+        .certificate-info h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--dark-color);
+        }
+
+        .certificate-info p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+
+        .certificate-date {
+            color: var(--primary-color);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        /* Reviews Section */
+        .reviews {
+            background-color: #f1f5f9;
+        }
+
+        .reviews-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .review-card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-bottom: 30px;
+            transition: var(--transition);
+        }
+
+        .review-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .review-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .reviewer-info {
+            display: flex;
+            align-items: center;
+        }
+
+        .reviewer-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-right: 15px;
+        }
+
+        .reviewer-details h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .reviewer-details p {
+            color: var(--text-light);
+            font-size: 0.9rem;
+        }
+
+        .review-rating {
+            display: flex;
+            gap: 5px;
+        }
+
+        .rating-star {
+            color: #ddd;
+            font-size: 1.2rem;
+        }
+
+        .rating-star.filled {
+            color: var(--accent-color);
+        }
+
+        .review-text {
+            font-style: italic;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .review-date {
+            margin-top: 15px;
+            color: var(--text-light);
+            font-size: 0.9rem;
+            text-align: right;
+        }
+
+        /* Review Form Styles */
+        .review-form-container {
+            background-color: white;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: var(--shadow);
+            margin-top: 40px;
+        }
+
+        .review-form-title {
+            text-align: center;
+            margin-bottom: 25px;
+            color: var(--dark-color);
+        }
+
+        .star-rating {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            gap: 5px;
+        }
+
+        .star {
+            font-size: 2rem;
+            color: #ddd;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .star:hover,
+        .star.active {
+            color: var(--accent-color);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 12px 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+        }
+
+        textarea.form-control {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        .form-actions {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .review-submit-btn {
+            margin-top: 10px;
+        }
+
+        .reset-btn {
+            background-color: #6b7280;
+            margin-top: 10px;
+        }
+
+        .reset-btn:hover {
+            background-color: #4b5563;
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: white;
+        }
+
+        .contact-content {
+            display: flex;
+            gap: 50px;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .contact-form {
+            flex: 1;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            text-align: center;
+            padding: 30px 0;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .social-links a {
+            width: 40px;
+            height: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 10px;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .about-content {
+                flex-direction: column;
+            }
+            
+            .contact-content {
+                flex-direction: column;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .navbar {
+                padding: 15px 0;
+            }
+            
+            .nav-links {
+                position: fixed;
+                top: 70px;
+                left: -100%;
+                width: 100%;
+                height: calc(100vh - 70px);
+                background-color: white;
+                flex-direction: column;
+                align-items: center;
+                justify-content: flex-start;
+                padding-top: 50px;
+                transition: var(--transition);
+            }
+            
+            .nav-links.active {
+                left: 0;
+            }
+            
+            .nav-links li {
+                margin: 15px 0;
+            }
+            
+            .hamburger {
+                display: block;
+            }
+            
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .review-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .review-rating {
+                margin-top: 10px;
+            }
+            
+            .form-actions {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body data-aos-easing="ease" data-aos-duration="1000" data-aos-delay="0">
+    <!-- Header -->
+    <header style="background-color: rgba(255, 255, 255, 0.95); box-shadow: rgba(0, 0, 0, 0.1) 0px 5px 15px;">
+        <div class="container">
+            <nav class="navbar">
+                <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#" class="logo">Yaseer<span>Arfath</span></a>
+                <ul class="nav-links">
+                    <li><a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#home">Home</a></li>
+                    <li><a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#about">About</a></li>
+                    <li><a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#projects">Projects</a></li>
+                    <li><a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#certificates">Certificates</a></li>
+                    <li><a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#reviews">Reviews</a></li>
+                    <li><a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Mohammed Yaseer Arfath J</h1>
+                <p>I'm a <span class="typing-text">Full</span></p>
+                <p>Final Year BCA Student | Developer | Freelancer</p>
+                <div class="hero-btns">
+                    <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#projects" class="btn">View My Work</a>
+                    <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html#contact" class="btn btn-outline">Contact Me</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <p>Get to know more about my skills, education, and experience</p>
+            </div>
+            <div class="about-content">
+                <div class="about-img aos-init aos-animate" data-aos="fade-right">
+                    <!-- Placeholder image - replace with your actual photo -->
+                    <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/IMG_20250624_173732_366.jpg" alt="Mohammed Yaseer Arfath J">
+                </div>
+                <div class="about-text aos-init aos-animate" data-aos="fade-left">
+                    <h3>Hello! I'm Yaseer Arfath</h3>
+                    <p>I'm a passionate full-stack developer and final year BCA student with expertise in creating modern web applications. I enjoy turning complex problems into simple, beautiful designs.</p>
+                    <p>My strengths include quickly adapting to new technologies, learning rapidly, and delivering high-quality work. I'm always eager to take on new challenges and expand my skill set.</p>
+                    <div class="skills">
+                        <span class="skill">HTML/CSS</span>
+                        <span class="skill">JavaScript</span>
+                        <span class="skill">React</span>
+                        <span class="skill">Node.js</span>
+                        <span class="skill">Git/GitHub</span>
+                        <span class="skill">Database Management</span>
+                        <span class="skill">Responsive Design</span>
+                        <span class="skill">UI/UX Design</span>
+                    </div>
+                    <!-- CV Download Link -->
+                   
+                    <a href="https://instagram.com/_yaseer4504" target="_blank" class="instagram-link">
+                        <i class="fab fa-instagram"></i> Follow me on Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Projects</h2>
+                <p>Check out some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card aos-init aos-animate" data-aos="fade-up">
+                    <div class="project-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/photo-1587145820266-a5951ee6f620" alt="Calculator Project">
+                        <div class="project-overlay">
+                            <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/projects/Callsi.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Advanced Calculator</h3>
+                        <p>A feature-rich calculator with scientific functions, history tracking, and responsive design.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">Responsive Design</span>
+                        </div>
+                        <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/projects/Callsi.html" class="btn">Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/photo-1559028012-481c04fa702d" alt="Image Gallery Project">
+                        <div class="project-overlay">
+                            <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/projects/image%20galley.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Image Gallery</h3>
+                        <p>A responsive image gallery with filtering, lightbox view, and smooth animations.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">CSS3</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/projects/image%20galley.html" class="btn">Demo</a>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/photo-1460925895917-afdab827c52f" alt="Portfolio Project">
+                        <div class="project-overlay">
+                            <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html" class="btn">View Details</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Personal Portfolio</h3>
+                        <p>A responsive portfolio website with modern design, animations, and contact form.</p>
+                        <div class="project-tags">
+                            <span class="project-tag">HTML/CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                            <span class="project-tag">Responsive Design</span>
+                        </div>
+                        <a href="file:///C:/Users/Admin/OneDrive/Desktop/Portfolio/portfoliyo.html" class="btn">Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="section certificates">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Certificates</h2>
+                <p>Professional certifications and achievements</p>
+            </div>
+            <div class="certificates-grid">
+                <!-- Certificate 1 -->
+                <div class="certificate-card aos-init aos-animate" data-aos="zoom-in">
+                    <div class="certificate-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/java basics - high rank.png" alt="Java Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Java (Basic) Certification</h3>
+                        <p>HackerRank</p>
+                        <p class="certificate-date">Earned: October 25, 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 2 -->
+                <div class="certificate-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="certificate-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/cyber security - infosys.png" alt="Cyber Security Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Cyber Security Overview</h3>
+                        <p>Infosys Springboard</p>
+                        <p class="certificate-date">Earned: October 26, 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 3 -->
+                <div class="certificate-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="certificate-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/ai for business - hp life.png" alt="AI Certificate">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>AI for Business Professionals</h3>
+                        <p>HP LIFE</p>
+                        <p class="certificate-date">Earned: October 26, 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 4 -->
+                <div class="certificate-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="certificate-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/fundemantal of information - infosys.png" alt="Fundamentals of Information Security">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Fundamentals of Information Security</h3>
+                        <p>Infosys Springboard</p>
+                        <p class="certificate-date">Earned: October 26, 2025</p>
+                    </div>
+                </div>
+                
+                <!-- Certificate 5 -->
+                <div class="certificate-card aos-init aos-animate" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="certificate-img">
+                        <img src="./Mohammed Yaseer Arfath J _ Portfolio_files/profectional of networking - hp life.png" alt="Professional Networking">
+                    </div>
+                    <div class="certificate-info">
+                        <h3>Professional Networking for Career Growth</h3>
+                        <p>HP LIFE</p>
+                        <p class="certificate-date">Earned: October 26, 2025</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="section reviews">
+        <div class="container">
+            <div class="section-title">
+                <h2>Client Reviews</h2>
+                <p>What people say about my work</p>
+            </div>
+            <div class="reviews-container">
+                <!-- Reviews Display Area -->
+                <div id="reviews-display">
+                    <!-- Reviews will be dynamically added here -->
+                </div>
+                
+                <!-- Review Form -->
+                <div class="review-form-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="review-form-title">Leave a Review</h3>
+                    <form id="review-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="reviewer-name" placeholder="Your Name" required="">
+                        </div>
+                        <div class="star-rating" id="star-rating">
+                            <span class="star" data-rating="1" style="color: rgb(221, 221, 221);">★</span>
+                            <span class="star" data-rating="2" style="color: rgb(221, 221, 221);">★</span>
+                            <span class="star" data-rating="3" style="color: rgb(221, 221, 221);">★</span>
+                            <span class="star" data-rating="4" style="color: rgb(221, 221, 221);">★</span>
+                            <span class="star" data-rating="5" style="color: rgb(221, 221, 221);">★</span>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" id="review-message" placeholder="Your Review" required=""></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn review-submit-btn">Submit Review</button>
+                            <button type="reset" class="btn reset-btn">Reset Form</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+                <p>Get in touch for collaborations or opportunities</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info aos-init" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Tumkur, Karnataka</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h3>Email</h3>
+                            <p>arfathyaseer995@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>+91 90087 89315</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-briefcase"></i>
+                        </div>
+                        <div>
+                            <h3>Internships</h3>
+                            <p>Oasis Infobyte (Data Analytics)<br>CodeAlpha (Frontend Development)</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form aos-init" data-aos="fade-left">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Your Name" required="">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Your Email" required="">
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" placeholder="Your Message" required=""></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/arfathyaseer995-J" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/yaseer-arfath-j-4a980937b" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://instagram.com/_yaseer4504" target="_blank"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p>© 2025 Mohammed Yaseer Arfath J. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="./Mohammed Yaseer Arfath J _ Portfolio_files/aos.js.download"></script>
+    <script>
+        // Initialize AOS (Animate On Scroll)
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Mobile Navigation Toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Navbar background on scroll
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if(window.scrollY > 100) {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            } else {
+                header.style.backgroundColor = 'rgba(255, 255, 255, 0.95)';
+                header.style.boxShadow = '0 5px 15px rgba(0, 0, 0, 0.1)';
+            }
+        });
+
+        // Typing Effect
+        const typingText = document.querySelector('.typing-text');
+        const texts = ['Full Stack Developer', 'BCA Student', 'Freelancer', 'Problem Solver'];
+        let textIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+
+        function type() {
+            const currentText = texts[textIndex];
+            
+            if (isDeleting) {
+                typingText.textContent = currentText.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                typingText.textContent = currentText.substring(0, charIndex + 1);
+                charIndex++;
+            }
+            
+            if (!isDeleting && charIndex === currentText.length) {
+                isDeleting = true;
+                setTimeout(type, 2000);
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                setTimeout(type, 500);
+            } else {
+                setTimeout(type, isDeleting ? 100 : 150);
+            }
+        }
+
+        // Start typing effect
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(type, 1000);
+            loadReviews(); // Load existing reviews on page load
+        });
+
+        // Contact form submission
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! I will get back to you soon.');
+            this.reset();
+        });
+
+        // Review System
+        let selectedRating = 0;
+
+        // Star rating functionality
+        const stars = document.querySelectorAll('.star');
+        stars.forEach(star => {
+            star.addEventListener('click', function() {
+                selectedRating = parseInt(this.getAttribute('data-rating'));
+                
+                // Update star appearance
+                stars.forEach(s => {
+                    if (parseInt(s.getAttribute('data-rating')) <= selectedRating) {
+                        s.classList.add('active');
+                    } else {
+                        s.classList.remove('active');
+                    }
+                });
+            });
+            
+            // Hover effect
+            star.addEventListener('mouseover', function() {
+                const rating = parseInt(this.getAttribute('data-rating'));
+                stars.forEach(s => {
+                    if (parseInt(s.getAttribute('data-rating')) <= rating) {
+                        s.style.color = '#f59e0b';
+                    } else {
+                        s.style.color = '#ddd';
+                    }
+                });
+            });
+            
+            // Reset on mouseout
+            star.addEventListener('mouseout', function() {
+                stars.forEach(s => {
+                    if (parseInt(s.getAttribute('data-rating')) <= selectedRating) {
+                        s.style.color = '#f59e0b';
+                    } else {
+                        s.style.color = '#ddd';
+                    }
+                });
+            });
+        });
+
+        // Review form submission
+        document.getElementById('review-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            if (selectedRating === 0) {
+                alert('Please select a rating before submitting your review.');
+                return;
+            }
+            
+            const name = document.getElementById('reviewer-name').value;
+            const message = document.getElementById('review-message').value;
+            
+            // Create new review object
+            const newReview = {
+                id: Date.now(), // Unique ID based on timestamp
+                name: name,
+                rating: selectedRating,
+                message: message,
+                date: new Date().toLocaleDateString('en-US', { 
+                    year: 'numeric', 
+                    month: 'long', 
+                    day: 'numeric' 
+                })
+            };
+            
+            // Save review to localStorage
+            saveReview(newReview);
+            
+            // Display the new review immediately
+            displayReview(newReview);
+            
+            // Reset form
+            document.getElementById('review-form').reset();
+            stars.forEach(star => {
+                star.classList.remove('active');
+                star.style.color = '#ddd';
+            });
+            selectedRating = 0;
+            
+            alert('Thank you for your review! It has been added to the reviews section.');
+        });
+
+        // Function to save review to localStorage
+        function saveReview(review) {
+            let reviews = JSON.parse(localStorage.getItem('portfolioReviews')) || [];
+            reviews.unshift(review); // Add new review at the beginning
+            localStorage.setItem('portfolioReviews', JSON.stringify(reviews));
+        }
+
+        // Function to load reviews from localStorage
+        function loadReviews() {
+            const reviews = JSON.parse(localStorage.getItem('portfolioReviews')) || [];
+            const reviewsDisplay = document.getElementById('reviews-display');
+            
+            // Display all reviews (no sample reviews)
+            reviews.forEach(review => {
+                displayReview(review);
+            });
+        }
+
+        // Function to display a review
+        function displayReview(review) {
+            const reviewsDisplay = document.getElementById('reviews-display');
+            
+            // Create review element
+            const reviewElement = document.createElement('div');
+            reviewElement.className = 'review-card';
+            reviewElement.setAttribute('data-aos', 'fade-up');
+            
+            // Generate stars HTML based on rating
+            let starsHTML = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= review.rating) {
+                    starsHTML += '<span class="rating-star filled">★</span>';
+                } else {
+                    starsHTML += '<span class="rating-star">★</span>';
+                }
+            }
+            
+            // Get first letter of name for avatar
+            const avatarLetter = review.name.charAt(0).toUpperCase();
+            
+            // Set review content
+            reviewElement.innerHTML = `
+                <div class="review-header">
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar">${avatarLetter}</div>
+                        <div class="reviewer-details">
+                            <h4>${review.name}</h4>
+                        </div>
+                    </div>
+                    <div class="review-rating">
+                        ${starsHTML}
+                    </div>
+                </div>
+                <div class="review-text">
+                    ${review.message}
+                </div>
+                <div class="review-date">
+                    ${review.date}
+                </div>
+            `;
+            
+            // Add the new review at the top of the reviews display
+            reviewsDisplay.insertBefore(reviewElement, reviewsDisplay.firstChild);
+        }
+    </script>
+
+</body></html>
